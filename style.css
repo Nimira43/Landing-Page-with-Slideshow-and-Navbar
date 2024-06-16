@@ -12,6 +12,22 @@ html {
     font-size: 62.5%;
 }
 
+:root {
+    --primary: #0000ff;
+    --blue-d: #00008b;
+    --blue-l: #58bde6;
+    --blue-bg: #b0d6e5;
+    --grey-xd: #111;
+    --grey-d: #333;
+    --grey-m: #888;
+    --grey-l: #ccc;
+    --grey-xl: #eee;
+}
+
+body {
+    background-color: var(--blue-bg);
+}
+
 .container {
     width: 100%;
     height: 100vh;
@@ -35,4 +51,46 @@ html {
     align-items: center;
     padding: 0 5rem;
     z-index: 10;
+}
+
+.logo i {
+    font-size: 5rem;
+    color: var(--primary);
+    -webkit-text-stroke: 0.1rem var(--blue-d);
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.navigation a {
+    font-size: 2rem;
+    color: var(--primary);
+    margin: 0 3rem;
+    position: relative;
+}
+
+.navigation a::before,
+.navigation a::after {
+    content: '';
+    width: 100%;
+    height: 0.2rem;
+    background-color: var(--blue-d);
+    position: absolute;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.navigation a::before {
+    top: -0.5rem;
+    transform-origin: left;
+}
+
+.navigation a::after {    
+    bottom: -0.5rem;
+    transform-origin: right;
+}
+
+.navigation a:hover::before,
+.navigation a:hover::after {
+    transform: scaleX(1);
 }
