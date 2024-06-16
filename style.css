@@ -63,7 +63,7 @@ body {
 .navigation a {
     font-size: 2rem;
     color: var(--skyblue-1);
-    text-shadow: 0.2rem 0.2rem 0.4rem var(--orange);
+    text-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.9);
     margin: 0 3rem;
     position: relative;
 }
@@ -147,4 +147,151 @@ body {
     height: 100%;
     object-fit: cover;
     opacity: 0.3;
+}
+
+.banner {
+    width: 100rem;
+    height: 100rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bg-heading {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20rem;
+    -webkit-text-stroke: 0.1rem var(--skyblue-1);
+    color: transparent;
+    letter-spacing: 1.5rem;
+
+}
+
+.main-heading {
+    position: absolute;
+    top: 47%;
+    left: 22%;
+    font-family: 'Caveat', cursive;
+    font-size: 8rem;
+    font-weight: 800;
+    color: var(--orange);
+    letter-spacing: 0.5rem;
+}
+
+.description {
+    position: absolute;
+    bottom: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--skyblue-1);
+}
+
+.slide-btn {
+    width: 20rem;
+    height: 5rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 0.2rem solid var(--skyblue-1);
+    position: absolute;
+    bottom: 27%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    color: var(--orange);
+    cursor: pointer;
+    transition: all 0.6s;
+    overflow: hidden;
+}
+
+.slide-btn:hover {
+    color: var(--skyblue-1);
+    border-color: var(--orange);
+}
+
+.slide-btn::before,
+.slide-btn::after {
+    content: '';
+    width: 20rem;
+    height: 10rem;
+    background-color: var(--orange);
+    position: absolute;
+    transform: rotateZ(45deg);
+    transition: transform 0.6s;
+    z-index: -10;
+}
+
+.slide-btn::before {
+    left: -14rem;
+    top: 0;
+}
+
+.slide-btn::after {
+    right: -14rem;
+    top: -5rem;
+}
+
+.slide-btn:hover::before {
+    transform: rotateZ(45deg) scale(2.4);
+}
+
+.slide-btn:hover::after {
+    transform: rotateZ(45deg) scale(2.4);
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -50rem;
+    width: 50rem;
+    height: 100vh;
+    background-color: var(--dark);
+    transition: right 0.5s cubic-bezier(1, 0, 0, 1);
+    z-index: 100;
+}
+
+.navigate.sidebar {
+    right: 0;
+}
+
+.sidebar i {
+    position: absolute;
+    top: 2rem;
+    right: 5rem;
+    font-size: 8rem;
+    color: var(--skyblue-2);
+    cursor: pointer;
+}
+
+.sidebar-nav {
+    width: 40rem;
+    height: 15rem;
+    border: 0.1rem solid var(--orange);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: height 0.5s;
+}
+
+.change .sidebar-nav {
+    height: 60rem;
+}
+
+.sidebar-btn {
+    width: 40rem;
+    height: 15rem;
+    background-color: transparent;
+    border: none;
+    font-size: 6rem;
+    -webkit-text-stroke: 0.1rem skyblue;
+    color: transparent;
+    cursor: pointer;
+
 }
