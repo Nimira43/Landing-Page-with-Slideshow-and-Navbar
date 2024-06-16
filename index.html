@@ -7,9 +7,98 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title></title>
+    <script src="script.js" defer></script>
+    <title>Landing Page with Slideshow and Navbar</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="landing">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-terminal"></i>
+                </div>
+                <div class="navigation">
+                    <a href="#">Home</a>
+                    <a href="#">Services</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Blog</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="menu-icon">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                </div>
+            </nav>
+            <div class="slides">
+                <div class="slide slide-1">
+                    <div class="slide-img-wrapper">
+                        <img src="./images/img-1.jpg">
+                    </div>
+                    <div class="banner">
+                        <h1 class="bg-heading">NimiraTech</h1>
+                        <h2 class="main-heading">Designed Software</h2>
+                        <p class="description">
+                            We offer software solutions tailored to meet you're needs. From security solutions like Anti Malware and Firewalls to Office Suites we have you covered.
+                        </p>
+                        <button type="button" class="slide-btn">Read More</button>
+                    </div>
+                </div>
+                <div class="slide slide-2">
+                    <div class="slide-img-wrapper">
+                        <img src="./images/img-2.jpg">
+                    </div>
+                    <div class="banner">
+                        <h1 class="bg-heading">Security</h1>
+                        <h2 class="main-heading">Skorpion IPS</h2>
+                        <p class="description">
+                            The Skorpion IPS is our premium security solution that protects you networks from hostile intrustions. Not only that it is designed to counter any threats.
+                        </p>
+                        <button type="button" class="slide-btn">Read More</button>
+                    </div>
+                </div>
+                <div class="slide slide-3">
+                    <div class="slide-img-wrapper">
+                        <img src="./images/img-3.jpg">
+                    </div>
+                    <div class="banner">
+                        <h1 class="bg-heading">Productivity</h1>
+                        <h2 class="main-heading">Visula Office</h2>
+                        <p class="description">
+                            Our brand new Visula Office suite provides you with all the productivity software for you business, including project management, shared workplace and databases.
+                        </p>
+                        <button type="button" class="slide-btn">Read More</button>
+                    </div>
+                </div>
+                <div class="slide slide-4">
+                    <div class="slide-img-wrapper">
+                        <img src="./images/img-3.jpg">
+                    </div>
+                    <div class="banner">
+                        <h1 class="bg-heading">Focused</h1>
+                        <h2 class="main-heading">Exclusive Solutions</h2>
+                        <p class="description">
+                            We offer consulation services for our customers providing software that is tailored for their needs, from Accountancy to Engineering.
+                        </p>
+                        <button type="button" class="slide-btn">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <i class="fas fa-xmark"></i>
+                <div class="sidebar-nav">
+                    <button type="button" class="sidebar-btn">NimiraTech</button>
+                    <div class="sidebar-nav-items">
+                        <a href="#">Home</a>
+                        <a href="#">Services</a>
+                        <a href="#">Projects</a>
+                        <a href="#">Blog</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
