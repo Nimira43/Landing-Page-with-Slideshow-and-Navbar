@@ -13,11 +13,10 @@ html {
 }
 
 :root {
-    --primary: #0000ff;
-    --blue-d: #00008b;
-    --blue-l: #58bde6;
-    --blue-bg: #b0d6e5;
-    --grey-xd: #111;
+    --skyblue-1: #46b9e6;
+    --skyblue-2: #9dd0e4;
+    --orange: #ff4500;
+    --dark: #111;
     --grey-d: #333;
     --grey-m: #888;
     --grey-l: #ccc;
@@ -25,7 +24,7 @@ html {
 }
 
 body {
-    background-color: var(--blue-bg);
+    background-color: var(--skyblue-2);
 }
 
 .container {
@@ -55,15 +54,16 @@ body {
 
 .logo i {
     font-size: 5rem;
-    color: var(--primary);
-    -webkit-text-stroke: 0.1rem var(--blue-d);
+    color: var(--orange);
+    -webkit-text-stroke: 0.2rem var(--skyblue-1);
     margin-right: 1rem;
     cursor: pointer;
 }
 
 .navigation a {
     font-size: 2rem;
-    color: var(--primary);
+    color: var(--skyblue-1);
+    text-shadow: 0.2rem 0.2rem 0.4rem var(--orange);
     margin: 0 3rem;
     position: relative;
 }
@@ -73,7 +73,7 @@ body {
     content: '';
     width: 100%;
     height: 0.2rem;
-    background-color: var(--blue-d);
+    background-color: var(--orange);
     position: absolute;
     left: 0;
     transform: scaleX(0);
@@ -107,7 +107,7 @@ body {
 .line {
     width: 100%;
     height: 0.4rem;
-    background-color: var(--blue-d);
+    background-color: var(--orange);
     transition: transform 0.5s;
 }
 
@@ -121,4 +121,30 @@ body {
 
 .menu-icon:hover .line {
     transform: scaleX(0.5);
+}
+
+.slides {
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark);
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: opacity 2s;
+}
+
+.slide-img-wrapper {
+    width: 100%;
+    height: 100%;
+    background: var(--dark);
+}
+
+.slide-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
 }

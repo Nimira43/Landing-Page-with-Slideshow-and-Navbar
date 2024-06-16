@@ -9,9 +9,9 @@ const slideshow = () => {
     }
     slides.forEach((slide) => {
         if (slide.classList[1].split('-')[1] * 1 === current) {
-            slides.style.cssText = 'visibility: visible; opacity: 1;'
+            slide.style.cssText = 'visibility: visible; opacity: 1;'
         } else {
-            slides.style.cssText = 'visibility: hidden; opacity: 0;' 
+            slide.style.cssText = 'visibility: hidden; opacity: 0;' 
         }
     })
     current++
