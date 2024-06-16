@@ -160,7 +160,7 @@ body {
 
 .bg-heading {
     position: absolute;
-    top: 22%;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 20rem;
@@ -265,14 +265,14 @@ body {
     top: 2rem;
     right: 5rem;
     font-size: 8rem;
-    color: var(--skyblue-2);
+    color: var(--orange);
     cursor: pointer;
 }
 
 .sidebar-nav {
     width: 40rem;
     height: 15rem;
-    border: 0.1rem solid var(--orange);
+    border: 0.1rem solid var(--skyblue-1);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -290,8 +290,43 @@ body {
     background-color: transparent;
     border: none;
     font-size: 6rem;
-    -webkit-text-stroke: 0.1rem skyblue;
-    color: transparent;
+    font-weight: 200;
+    color: var(--orange);
     cursor: pointer;
+}
 
+.sidebar-nav-items {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.change .sidebar-nav-items {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s 0.5s;
+}
+
+.sidebar-nav-items a {
+    font-size: 3rem;
+    font-weight: 200;
+    color: var(--skyblue-1);
+    margin: 1rem 0;
+    transition: color 0.3s;
+}
+
+.sidebar-nav-items a:hover {
+    color: var(--orange);
+}
+
+@media (max-width: 1200px) {
+    html {
+        fon
+    }
 }
